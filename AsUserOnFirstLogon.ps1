@@ -1,3 +1,6 @@
+New-Item -ItemType Directory -Path "HKCU:\Software\Adobe\Acrobat Reader\DC\Privileged" -Force
+Set-ItemProperty -Path "HKCU:\Software\Adobe\Acrobat Reader\DC\Privileged" -Name "bProtectedMode" -Value 0
+
 winget install 9WZDNCRFJ4MV --silent --accept-source-agreements --accept-package-agreements --force --source msstore;
 winget install Google.Chrome --silent --accept-source-agreements --accept-package-agreements --force --source winget;
 winget install Adobe.Acrobat.Reader.64-bit --silent --accept-source-agreements --accept-package-agreements --force --source winget;
