@@ -1,1 +1,1 @@
-
+if (Test-Connection -ComputerName 10.1.10.2 -Count 1) { net use Z: \\10.1.10.2\files /no /user:tech tech; Add-AppxPackage -Path "Z:\microsoft.vclibs.appx"; Add-AppxPackage -Path "Z:\microsoft.ui.xaml.appx"; Add-AppxPackage -Path "Z:\winget.msixbundle"; netsh wlan add profile filename="\\10.1.10.2\scripts\Wi-Fi-TML_Info_Guest.xml" }
